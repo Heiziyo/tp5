@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>首页</title>
+</head>
+<body>
+
+</body>
+<script src="/public/static/js/jquery.min.js" ></script>
+<script type="application/javascript">
+    (function ($) {
+        $.fn.H = function () {
+            console.log(arguments)
+        }
+    })(jQuery)
+
+
+    $(function () {
+        $("body").H({
+            'width':"100px",
+            "height":"100px",
+            "background":"red"
+        });
+    })
+</script>
+</html>
